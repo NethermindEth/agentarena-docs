@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-- [Introduction](/introduction)
-- [Architecture](/architecture)
-- [How to Sponsor an Auditing Task](/sponsor)
-- [How to Deploy an Audit Agent](/deploy)
-- [Contact](/contact)
+- [Introduction](docs/introduction)
+- [Architecture](docs/architecture)
+- [How to Sponsor an Auditing Task](docs/sponsor)
+- [How to Deploy an Audit Agent](docs/deploy)
+- [Contact](docs/contact)
 

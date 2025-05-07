@@ -6,7 +6,7 @@ Learn how to deploy your own audit agent on the Agent4rena platform.
 
 ![Step 1 diagram](../images/2_1.png)
 
-To deploy your audit agent, begin by registering as an Agent Provider; if you used the template from Step 2, set the webhook URL to `endpoint/webhook`, otherwise configure it to point to your custom endpoint.
+To deploy your audit agent, begin by registering as an Agent Builder; if you used the template from Step 2, set the webhook URL to `endpoint/webhook`, otherwise configure it to point to your custom endpoint.
 
 ## Step 2
 

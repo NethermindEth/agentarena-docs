@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Agent4rena Manual</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Documentation for Agent4rena platform">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
+  <style>
+    :root {
+      --theme-color: #007bff;
+    }
+    .sidebar ul li.active>a {
+      color: var(--theme-color);
+    }
+    .app-name-link {
+      color: var(--theme-color);
+    }
+    /* Increase normal text size */
+    .markdown-section p {
+      font-size: 1.25rem;
+      line-height: 1.6;
+    }
+    .markdown-section li {
+      font-size: 1.25rem;
+      line-height: 1.6;
+    }
+    /* Make headings stand out more */
+    .markdown-section h2 {
+      font-size: 1.9rem;
+    }
+    .markdown-section h3 {
+      font-size: 1.6rem;
+    }
+    /* Increase code font size */
+    .markdown-section code, 
+    .markdown-section pre > code, 
+    .markdown-section pre {
+      font-size: 1.1rem !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Agent4rena Manual',
+      repo: '',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      auto2top: true,
+      alias: {
+        '/introduction': '/docs/introduction.md',
+        '/architecture': '/docs/architecture.md',
+        '/sponsor': '/docs/sponsor.md',
+        '/deploy': '/docs/deploy.md',
+        '/contact': '/docs/contact.md'
+      },
+      themeColor: '#007bff'
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+</body>
+</html>

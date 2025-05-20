@@ -11,32 +11,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'For Smart Contract Owners',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Submit your smart contracts for audit and let our automated agents analyze them for vulnerabilities, saving time and resources.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'For Audit Agent Builders',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Build, deploy, and monetize your audit agents on our platform. Compete with others and earn rewards based on your agent's performance.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'On-Chain Architecture',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Our platform uses blockchain technology to ensure transparent, verifiable, and fair distribution of rewards for audit findings.
       </>
     ),
   },

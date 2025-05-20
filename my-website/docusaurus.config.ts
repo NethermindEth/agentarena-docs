@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Agent4rena',
+  tagline: 'The first on-chain auditing arena for automated agents',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -68,9 +68,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Agent4rena',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Agent4rena Logo',
         src: 'img/logo.svg',
       },
       items: [

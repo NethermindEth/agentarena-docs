@@ -1,0 +1,132 @@
+---
+title: Deploy L2
+sidebar_position: 5
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Deploy L2
+
+A Layer 2 network builds on top of Layer 1 to increase scalability and reduce transaction costs, while still inheriting L1’s security. For Surge, the L2 network is where user transactions are executed and blocks are proposed and proven.
+
+This guide provides clear instructions for deploying Surge’s L2 components using the [Simple Surge Node](https://github.com/NethermindEth/simple-surge-node), enabling you to run and test the core rollup logic.
+
+To see how L2 fits into the overall system, refer to the [Surge Architecture documentation](/docs/about/architecture).
+
+## Setup Process
+
+Follow these steps to set up and deploy your L2 network:
+
+### 1. Clone Repository
+
+Clone the [Simple Surge Node](https://github.com/NethermindEth/simple-surge-node) repository and navigate into the directory:
+
+```bash
+git clone https://github.com/NethermindEth/simple-surge-node.git
+cd simple-surge-node
+```
+
+### 2. Configure Environment
+
+Create your environment configuration file (`.env`) by copying the provided sample:
+
+```bash
+cp .env.devnet .env
+```
+
+:::tip Environment Configuration
+The `.env.devnet` file includes default values for the devnet configuration, based on previously generated data. You can customize these values, such as L1 and L2 settings, genesis hashes, and addresses, as needed.
+:::
+
+:::note
+`host.docker.internal` values in the `.env` file might not work in all environments. If you encounter issues, replace `host.docker.internal` with your server's IP address or hostname.
+:::
+
+### 4. Start Components
+
+L2 consists of the following components, feel free to launch the ones specific to your needs.
+
+:::tip
+You can run multiple profiles at once:
+
+```bash
+docker compose --profile <profile1> --profile <profile2> up -d
+```
+:::
+
+#### Driver
+
+:::tip
+If you just want to follow the L2 chain, launching just the driver is sufficient.
+:::
+
+Starts the Nethermind Execution Client for L2 network operation:
+
+```bash
+docker compose --profile nethermind_execution_l2 up -d
+```
+
+#### Proposer
+Initiates the Proposer service for transaction bundling and block proposals:
+
+```bash
+docker compose --profile proposer up -d
+```
+
+#### Prover Relayer
+
+:::note
+If you did not deploy a prover in the previous setup steps, you can safely skip launching the prover relayer.
+:::
+
+Launches the Prover Relayer for proof relay:
+
+```bash
+docker compose --profile prover up -d
+```
+
+#### Metrics
+Sets up Prometheus and Grafana for real-time monitoring:
+
+```bash
+docker compose --profile metrics up -d
+```
+
+#### BlockScout
+Launches BlockScout that provides a web-based interface to:
+
+- Explore blocks, transactions, and accounts
+- Verify smart contracts
+- Monitor network activity
+- Track token transfers and balances
+
+```bash
+docker compose --profile blockscout up -d
+```
+
+## Verification
+
+After deploying all components, ensure everything is running correctly by:
+
+- Checking the status of Docker containers using `docker compose ps`.
+- Monitoring logs for startup errors with `docker compose --profile <profile_name> logs -f --tail 100`.
+- Verifying network connectivity between components.
+- Accessing BlockScout for L1 and L2 chain exploration and verification:
+  - *L1 BlockScout:* [http://localhost:35003](http://localhost:35003)
+  - *L2 BlockScout:* [http://localhost:4000](http://localhost:4000)
+
+Complete verification of the Surge devnet occurs after deploying additional services in subsequent steps.
+
+:::note
+Depending on your deployment setup, you might need to replace `localhost` with your server's IP address, hostname, or appropriate domain.
+:::
+
+## Troubleshooting
+
+If issues arise during deployment:
+
+- Confirm environment variables in `.env` are correctly configured.
+- Review Docker logs for detailed error information.
+- Ensure required ports are open and accessible.
+- Check network connectivity between the deployed components.

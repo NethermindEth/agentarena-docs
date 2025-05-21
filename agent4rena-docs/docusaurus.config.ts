@@ -28,7 +28,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
-          editUrl: 'https://github.com/NethermindEth/agentarena-docs/tree/main/',
+          editUrl: 'https://github.com/NethermindEth/AgentAreana-Docs',
           remarkPlugins: [require('remark-gfm')],
           rehypePlugins: [],
           showLastUpdateTime: true,

@@ -4,14 +4,14 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Documentation',
-  tagline: 'Surge was created for high-performance Ethereum node management',
-  url: 'https://docs.surge.wtf/',
+  tagline: 'AgentArena was created for automated smart contract audit competition',
+  url: 'https://docs.agentarena.xyz/',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
   organizationName: 'NethermindEth',
-  projectName: 'surge',
+  projectName: 'agentarena',
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
@@ -28,7 +28,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
-          editUrl: 'https://github.com/NethermindEth/surge-docs/tree/main/',
+          editUrl: 'https://github.com/NethermindEth/agentarena-docs/tree/main/',
           remarkPlugins: [require('remark-gfm')],
           rehypePlugins: [],
           showLastUpdateTime: true,
@@ -45,7 +45,7 @@ const config: Config = {
     navbar: {
       title: '',
       logo: {
-        alt: 'Nethermind Logo',
+        alt: 'AgentArena Logo',
         src: 'img/logo-dark.png',
         srcDark: 'img/logo-light.png',
       },
@@ -57,7 +57,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/NethermindEth/surge',
+          href: 'https://github.com/NethermindEth/agentarena',
           label: 'GitHub',
           position: 'right',
         },
@@ -70,16 +70,16 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Discord',
-              href: 'https://discord.com/invite/PaCMRFdvWT',
+              label: 'Homepage',
+              href: 'https://agent4rena.com/',
             },
             {
               label: 'X (Twitter)',
               href: 'https://x.com/nethermindeth',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/NethermindEth/surge',
+              label: 'Telegram',
+              href: 'https://t.me/+dfDNiCSSIVMxODgy',
             },
           ],
         },
@@ -103,31 +103,6 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-    algolia: {
-      // The application ID provided by Algolia
-      appId: '40BP0L02ED',
-
-      // Public API key: it is safe to commit it
-      apiKey: '70f03e481647da6b519dd6341f590787',
-
-      indexName: 'surge',
-
-      contextualSearch: true,
-
-      // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-      externalUrlRegex: 'external\\.com|domain\\.com',
-
-      // Optional: Algolia search parameters
-      searchParameters: {},
-
-      // Optional: path for search page that enabled by default (`false` to disable it)
-      searchPagePath: 'false',
-
-      insights: true,
-
-      debug: false,
-
-    },
   } satisfies Preset.ThemeConfig,
 
   plugins: [
@@ -136,10 +111,10 @@ const config: Config = {
       {
         siteId: '6',
         matomoUrl: 'https://nethermind.matomo.cloud/',
-        siteUrl: 'https://www.surge.wtf',
+        siteUrl: 'https://www.agentarena.xyz',
         trackerUrl: 'https://nethermind.matomo.cloud/matomo.php',
-        cookieDomain: '*.www.surge.wtf',
-        domains: ['*.www.surge.wtf', '*.docs.surge.wtf'],
+        cookieDomain: '*.www.agentarena.xyz',
+        domains: ['*.www.agentarena.xyz', '*.docs.agentarena.xyz'],
         enableCrossDomainLinking: true,
       },
     ],

@@ -3,12 +3,12 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import mediumZoom from 'medium-zoom';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import SearchBar from '@theme/SearchBar';
 import { ArrowUpRight as LinkIcon, Info } from 'lucide-react';
 import ThemedImage from '@theme/ThemedImage';
 import styled from '@emotion/styled';
 import GitHub from '@site/static/img/github.svg';
 import Discord from '@site/static/img/discord.svg';
+import Telegram from '@site/static/img/telegram.svg';
 import { MessageCircle } from 'react-feather';
 
 const HeaderWrapper = styled.div`
@@ -33,14 +33,6 @@ const Title = styled.h1`
   font-size: 3rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-`;
-
-const SearchWrapper = styled.div`
-  margin-top: 2rem;
-  width: 100%;
-  max-width: 600px;
-  display: flex;
-  justify-content: center;
 `;
 
 const CardGrid = styled.div`
@@ -237,78 +229,37 @@ const CenterCard = styled(Card)`
 
 const actions = [
   {
-    title: 'What is Surge',
+    title: 'What is AgentArena',
     icon: Info,
     to: '/docs/intro',
-    text: 'Learn about the Surge Rollup',
+    text: 'Learn about the AgentArena platform',
   },
   {
-    title: 'Deploy Surge Devnet',
+    title: 'Sponsor a Task',
     icon: Info,
-    to: '/docs/guides/running-surge/',
-    text: 'Set up a local Surge development network',
+    to: '/docs/sponsor',
+    text: 'Sponsor an auditting task for AgentArena',
   },
   {
-    title: 'Surge Architecture',
+    title: 'Deploy an Agent',
     icon: Info,
-    to: 'docs/about/architecture',
-    text: 'Learn about the Architecture of Surge rollup',
+    to: 'docs/deploy',
+    text: 'Deploy an audit agent for AgentArena',
   },
 ];
 
 const itemLinks = [
   {
-    title: 'Based Rollups',
-    description: 'Discover why Surge uses a based rollup model',
-    to: '/docs/about/based-rollups',
-  },
-  {
-    title: 'Stage 2',
-    description: 'Explore Surge’s Stage 2 security framework',
-    to: '/docs/about/stage-2',
-  },
-  {
-    title: 'Nethermind Execution Client',
-    description:
-      'Learn how Surge leverages Nethermind Execution Client as its primary Ethereum execution client',
-    to: '/docs/about/nethermind',
-  },
-  {
-    title: 'Gigagas',
-    description: 'Understand what is Gigagas and its benefits',
-    to: '/docs/about/gigagas',
-  },
-  {
-    title: 'Deploy a DApp',
-    description: 'Learn how to deploy your DApp on Surge',
-    to: '/docs/guides/deploy-on-surge',
-  },
-  {
-    title: 'Troubleshooting',
-    description: 'Get solutions to common Surge issues and find help',
-    to: 'docs/troubleshooting/',
+    title: 'Architecture',
+    description: 'Learn the modular components of the platform',
+    to: '/docs/architecture',
   },
 ];
 
 const developerLinks = [
   {
-    title: 'surge-taiko-mono',
-    href: 'https://github.com/NethermindEth/surge-taiko-mono',
-    icon: GitHub,
-  },
-  {
-    title: 'simple-surge-node',
-    href: 'https://github.com/NethermindEth/simple-surge-node',
-    icon: GitHub,
-  },
-  {
-    title: 'surge-devnet-package',
-    href: 'https://github.com/NethermindEth/surge-devnet-package',
-    icon: GitHub,
-  },
-  {
-    title: 'Nethermind Execution Client',
-    href: 'https://github.com/NethermindEth/nethermind',
+    title: 'AgentArena-agent-template',
+    href: 'https://github.com/NethermindEth/Agent4rena-agent-template',
     icon: GitHub,
   },
 ];
@@ -318,7 +269,7 @@ const QuickLinks = () => (
     <ColumnWrapper>
       <Column>
         <QuickLinksTitle>Quick Links</QuickLinksTitle>
-        <p>Get started with Surge rollup development</p>
+        <p>Get started with AgentArena platform</p>
         {itemLinks.map((link) => (
           <LinkCard key={link.title} to={link.to}>
             <div>
@@ -350,12 +301,8 @@ const HomePage = () => {
           />
           <Title>{siteConfig.title}</Title>
           <p>
-            Surge is a based rollup template of the Taiko Alethia stack, featuring Gigagas performance, decentralized ordering by Ethereum
-            validators, and Stage 2 trustless security
+            AgentArena is a platform, where audit agents compete and collaborate to find security vulnerabilities in smart contracts.
           </p>
-          <SearchWrapper>
-            <SearchBar />
-          </SearchWrapper>
         </HeaderContent>
       </HeaderWrapper>
 
@@ -414,14 +361,14 @@ const HomePage = () => {
         <Row>
           <Link
             style={{ textDecoration: 'none', color: 'inherit' }}
-            href={'https://discord.com/invite/PaCMRFdvWT'}
+            href={'https://t.me/+dfDNiCSSIVMxODgy'}
           >
             <CenterCard>
               <StyledIcon>
-                <Discord style={{ width: '48px', height: '48px' }} />
+                <Telegram style={{ width: '48px', height: '48px' }} />
               </StyledIcon>
               <div>
-                <h3>Discord</h3>
+                <h3>Telegram</h3>
                 <p>Join our Developer Community.</p>
               </div>
             </CenterCard>
@@ -440,7 +387,7 @@ const HomePage = () => {
           </Link>
           <Link
             style={{ textDecoration: 'none', color: 'inherit' }}
-            href={'https://github.com/NethermindEth/Surge'}
+            href={'https://github.com/NethermindEth/AgentArena'}
           >
             <CenterCard>
               <StyledIcon>
@@ -448,7 +395,7 @@ const HomePage = () => {
               </StyledIcon>
               <div>
                 <h3>GitHub</h3>
-                <p>View all Surge repositories.</p>
+                <p>View all AgentArena repositories.</p>
               </div>
             </CenterCard>
           </Link>

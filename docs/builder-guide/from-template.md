@@ -61,6 +61,7 @@ audit-agent local --repo https://github.com/username/example_contract_repo.git -
 
 The results will be saved to `audit.json`. Feel free to test the agent or audit other repositories before deploying your audit agent to the AgentArena platform.
 
+**Now that your audit agent built from the template is ready, follow the next [deployment](deploy) page to proceed.**
 
 
 

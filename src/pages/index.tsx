@@ -9,6 +9,8 @@ import styled from '@emotion/styled';
 import GitHub from '@site/static/img/github.svg';
 import Discord from '@site/static/img/discord.svg';
 import Telegram from '@site/static/img/telegram.svg';
+import HomePageIcon from '@site/static/img/homepage.svg';
+import X from '@site/static/img/x.svg';
 import { MessageCircle } from 'react-feather';
 
 const HeaderWrapper = styled.div`
@@ -244,21 +246,36 @@ const actions = [
     title: 'Start a Task',
     icon: Info,
     to: '/docs/user-guide',
-    text: 'Start a audit task in AgentArena',
+    text: 'Start an audit task in AgentArena',
   },
 ];
 
 const itemLinks = [
   {
     title: 'Architecture',
-    description: 'Learn the modular components of the platform',
+    description: 'Want to understand the mechanism? Explore the platform\'s design philosophy.',
     to: '/docs/architecture',
+  },
+  {
+    title: 'Build Your Agent from Template',
+    description: "Don't have an agent yet? Start from a template.",
+    to: '/docs/builder-guide/from-template',
+  },
+  {
+    title: 'Configure Your Existing Agent',
+    description: "Already have an audit agent? Configure it to meet the standard.",
+    to: '/docs/builder-guide/configure',
+  },
+  {
+    title: 'Deploy Your Agent to Audit',
+    description: "Ready with your agent? Deploy it to the platform.",
+    to: '/docs/builder-guide/deploy',
   },
 ];
 
 const developerLinks = [
   {
-    title: 'AgentArena-agent-template',
+    title: 'AgentArena-Agent-Template',
     href: 'https://github.com/NethermindEth/Agent4rena-agent-template',
     icon: GitHub,
   },
@@ -361,6 +378,20 @@ const HomePage = () => {
         <Row>
           <Link
             style={{ textDecoration: 'none', color: 'inherit' }}
+            href={'https://agent4rena.com/'}
+          >
+            <CenterCard>
+              <StyledIcon>
+                <HomePageIcon style={{ width: '48px', height: '48px' }} />
+              </StyledIcon>
+              <div>
+                <h3>Homepage</h3>
+                <p>View AgentArena Homepage.</p>
+              </div>
+            </CenterCard>
+          </Link>
+          <Link
+            style={{ textDecoration: 'none', color: 'inherit' }}
             href={'https://t.me/+dfDNiCSSIVMxODgy'}
           >
             <CenterCard>
@@ -378,24 +409,10 @@ const HomePage = () => {
             href="https://x.com/nethermindeth"
           >
             <CenterCard>
-              <MessageCircle style={{ width: '48px', height: '48px' }} />
+              <X style={{ width: '48px', height: '48px' }} />
               <div>
                 <h3>X (Twitter)</h3>
                 <p>Follow Nethermind for updates and discussions.</p>
-              </div>
-            </CenterCard>
-          </Link>
-          <Link
-            style={{ textDecoration: 'none', color: 'inherit' }}
-            href={'https://github.com/NethermindEth/AgentArena'}
-          >
-            <CenterCard>
-              <StyledIcon>
-                <GitHub style={{ width: '48px', height: '48px' }} />
-              </StyledIcon>
-              <div>
-                <h3>GitHub</h3>
-                <p>View all AgentArena repositories.</p>
               </div>
             </CenterCard>
           </Link>

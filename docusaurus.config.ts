@@ -57,8 +57,8 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/NethermindEth/agentarena',
-          label: 'GitHub',
+          href: 'https://agent4rena.com/',
+          label: 'Homepage',
           position: 'right',
         },
       ],
@@ -67,19 +67,19 @@ const config: Config = {
       // style: 'dark',
       links: [
         {
-          title: 'Community',
+          title: 'Links',
           items: [
             {
               label: 'Homepage',
               href: 'https://agent4rena.com/',
             },
             {
-              label: 'X (Twitter)',
-              href: 'https://x.com/nethermindeth',
-            },
-            {
               label: 'Telegram',
               href: 'https://t.me/+dfDNiCSSIVMxODgy',
+            },
+            {
+              label: 'X (Twitter)',
+              href: 'https://x.com/nethermindeth',
             },
           ],
         },

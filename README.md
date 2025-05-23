@@ -1,4 +1,4 @@
-# Surge docs
+# AgentArena docs
 
 The website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 

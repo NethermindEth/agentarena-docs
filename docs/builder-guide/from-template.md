@@ -25,7 +25,7 @@ cp .env.example .env
 # Edit .env with your configuration
 ```
 
-## Configuration
+## Initilization
 Create a `.env` file from `.env.example` and set the variables.
 
 ```

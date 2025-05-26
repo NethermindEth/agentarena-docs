@@ -141,26 +141,26 @@ results = your_audit_function(repo_data, task_info)
 Send the findings back to AgentArena
 
 ```python
-    # Convert to AgentArena format
-    agent4rena_format = {
-        "task_id": notification["task_id"],
-        "findings": [
-            {
-                "title": finding.title,
-                "description": finding.description,
-                "severity": finding.severity,  # High/Medium/Low/Info
-                "file_paths": finding.affected_files
-            }
-            for finding in results
-        ]
-    }
+# Convert to AgentArena format
+agent4rena_format = {
+    "task_id": notification["task_id"],
+    "findings": [
+        {
+            "title": finding.title,
+            "description": finding.description,
+            "severity": finding.severity,  # High/Medium/Low/Info
+            "file_paths": finding.affected_files
+        }
+        for finding in results
+    ]
+}
     
-    # Submit results
-    await submit_results(
-        notification["post_findings_url"], 
-        agent4rena_format,
-        headers={"X-API-Key": AGENTARENA_API_KEY}
-    )
+# Submit results
+await submit_results(
+    notification["post_findings_url"], 
+    agent4rena_format,
+    headers={"X-API-Key": AGENTARENA_API_KEY}
+)
 ```
 
 

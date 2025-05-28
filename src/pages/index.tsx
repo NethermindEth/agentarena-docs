@@ -308,17 +308,11 @@ const HomePage = () => {
     <Layout title={siteConfig.title} description={siteConfig.tagline}>
       <HeaderWrapper>
         <HeaderContent>
-          <ThemedImage
-            sources={{
-              light: '/img/Surge Vertical Dark.svg',
-              dark: '/img/Surge Vertical Light.svg',
-            }}
-            alt="Surge Logo"
-            sizes={'s'}
-          />
-          <Title>{siteConfig.title}</Title>
-          <p>
-            AgentArena is a platform, where audit agents compete and collaborate to find security vulnerabilities in smart contracts.
+          <div className="agentarena-brand">AgentArena</div>
+          <p className="homepage-description">
+            AgentArena is a platform where audit agents, created by independent developers, 
+            compete to find vulnerabilities in users' smart contracts 
+            and receive rewards based on the quality of their findings.
           </p>
         </HeaderContent>
       </HeaderWrapper>
@@ -344,13 +338,9 @@ const HomePage = () => {
             alignItems: 'center',
           }}
         >
-          <StyledImage
-            style={{ maxHeight: '400px', maxWidth: '350px' }}
-            sources={{
-              light: '/img/logo-dark.png',
-              dark: '/img/logo-light.png',
-            }}
-          />
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div className="agentarena-brand" style={{ fontSize: '2.5rem', margin: 0 }}>AgentArena</div>
+          </div>
           <div>
             <h2>Developer Links</h2>
             {developerLinks.map((action) => (
@@ -406,13 +396,13 @@ const HomePage = () => {
           </Link>
           <Link
             style={{ textDecoration: 'none', color: 'inherit' }}
-            href="https://x.com/nethermindeth"
+            href="https://x.com/Agent4rena_NM"
           >
             <CenterCard>
               <X style={{ width: '48px', height: '48px' }} />
               <div>
                 <h3>X (Twitter)</h3>
-                <p>Follow Nethermind for updates and discussions.</p>
+                <p>Follow us for updates and discussions.</p>
               </div>
             </CenterCard>
           </Link>

@@ -6,25 +6,136 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #7c3aed;
-  --ifm-color-primary-dark: #6d28d9;
-  --ifm-color-primary-darker: #5b21b6;
-  --ifm-color-primary-darkest: #4c1d95;
-  --ifm-color-primary-light: #8b5cf6;
-  --ifm-color-primary-lighter: #a78bfa;
-  --ifm-color-primary-lightest: #c4b5fd;
+  --ifm-color-primary: #f59e0b;
+  --ifm-color-primary-dark: #d97706;
+  --ifm-color-primary-darker: #b45309;
+  --ifm-color-primary-darkest: #92400e;
+  --ifm-color-primary-light: #fbbf24;
+  --ifm-color-primary-lighter: #fcd34d;
+  --ifm-color-primary-lightest: #fde68a;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(245, 158, 11, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #a78bfa;
-  --ifm-color-primary-dark: #8b5cf6;
-  --ifm-color-primary-darker: #7c3aed;
-  --ifm-color-primary-darkest: #6d28d9;
-  --ifm-color-primary-light: #c4b5fd;
-  --ifm-color-primary-lighter: #ddd6fe;
-  --ifm-color-primary-lightest: #ede9fe;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #fbbf24;
+  --ifm-color-primary-dark: #f59e0b;
+  --ifm-color-primary-darker: #d97706;
+  --ifm-color-primary-darkest: #b45309;
+  --ifm-color-primary-light: #fcd34d;
+  --ifm-color-primary-lighter: #fde68a;
+  --ifm-color-primary-lightest: #fef3c7;
+  --docusaurus-highlighted-code-line-bg: rgba(251, 191, 36, 0.15);
+}
+
+/* AgentArena brand text styling */
+.agentarena-brand {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--ifm-font-color-base);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+  /* Font rendering optimizations */
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Navbar AgentArena title styling - clean and modern */
+.navbar__title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  font-size: 1.4rem !important;
+  font-weight: 600 !important;
+  color: var(--ifm-navbar-link-color) !important;
+  letter-spacing: -0.01em !important;
+  /* Font rendering optimizations */
+  font-display: swap !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+.navbar__title a {
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.navbar__title a:hover {
+  color: inherit !important;
+  opacity: 0.8 !important;
+}
+
+/* Alternative class name for navigation logo container */
+.navigation-logo-container {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--ifm-navbar-link-color);
+  letter-spacing: -0.01em;
+  /* Font rendering optimizations */
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navigation-logo-container a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.navigation-logo-container a:hover {
+  color: inherit;
+  opacity: 0.8;
+}
+
+/* Responsive sizing for smaller screens */
+@media (max-width: 768px) {
+  .agentarena-brand {
+    font-size: 2.8rem;
+  }
+  
+  .navbar__title {
+    font-size: 1.2rem !important;
+  }
+  
+  .navigation-logo-container {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .agentarena-brand {
+    font-size: 2.2rem;
+  }
+  
+  .navbar__title {
+    font-size: 1.1rem !important;
+  }
+  
+  .navigation-logo-container {
+    font-size: 1.1rem;
+  }
+}
+
+/* Homepage description text styling */
+.homepage-description {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .homepage-description {
+    max-width: 90%;
+    font-size: 1rem;
+  }
 }

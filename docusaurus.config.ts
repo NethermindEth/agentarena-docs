@@ -22,6 +22,31 @@ const config: Config = {
     locales: ['en'],
   },
 
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: 'anonymous',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap',
+      },
+    },
+  ],
+
   presets: [
     [
       'classic',
@@ -41,14 +66,8 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/logo-dark.png',
     navbar: {
-      title: '',
-      logo: {
-        alt: 'AgentArena Logo',
-        src: 'img/logo-dark.png',
-        srcDark: 'img/logo-light.png',
-      },
+      title: 'AgentArena',
       items: [
         {
           type: 'doc',

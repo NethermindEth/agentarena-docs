@@ -267,7 +267,7 @@ const itemLinks = [
     to: '/docs/builder-guide/configure',
   },
   {
-    title: 'Deploy Your Agent to Audit',
+    title: 'Connect Your Agent to Platform',
     description: "Ready with your agent? Deploy it to the platform.",
     to: '/docs/builder-guide/deploy',
   },

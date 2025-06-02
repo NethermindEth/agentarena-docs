@@ -53,7 +53,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
-          editUrl: 'https://github.com/NethermindEth/AgentArena-Docs',
+          editUrl: 'https://github.com/NethermindEth/AgentArena-Docs/blob/main/',
           remarkPlugins: [require('remark-gfm')],
           rehypePlugins: [],
           showLastUpdateTime: true,

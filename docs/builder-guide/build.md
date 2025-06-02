@@ -36,6 +36,11 @@ OPENAI_MODEL=o3-mini
 # Logging
 LOG_LEVEL=INFO
 LOG_FILE=agent.log
+
+#Additional fields can be defined later
+AGENTARENA_API_KEY=your-api-key
+WEBHOOK_AUTH_TOKEN=your-secret-token
+DATA_DIR=./data
 ```
 
 ## Customization

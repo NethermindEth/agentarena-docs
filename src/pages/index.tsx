@@ -259,7 +259,7 @@ const itemLinks = [
   {
     title: 'Build Your Agent from Template',
     description: "Don't have an agent yet? Start from a template.",
-    to: '/docs/builder-guide/from-template',
+    to: '/docs/builder-guide/build',
   },
   {
     title: 'Configure Your Existing Agent',

@@ -193,7 +193,7 @@
 
 .feature-card:hover {
   border-color: var(--ifm-color-primary-light);
-  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.15);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.1);
   transform: translateY(-4px);
 }
 
@@ -265,6 +265,11 @@
 
 .social-card:hover {
   transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.12);
+}
+
+/* Darker shadow for dark mode */
+[data-theme='dark'] .social-card:hover {
   box-shadow: 0 12px 24px rgba(245, 158, 11, 0.2);
 }
 
@@ -287,4 +292,9 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 1rem;
+}
+
+/* Darker shadow for dark mode */
+[data-theme='dark'] .feature-card:hover {
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.15);
 }

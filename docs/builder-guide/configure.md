@@ -18,7 +18,7 @@ AGENTARENA_API_KEY=your-api-key
 WEBHOOK_AUTH_TOKEN=your-secret-token
 ```
 
-## Integration
+## Customization
 
 *Note: Integration steps vary across different agents. This section aims to explain the underlying mechanism in an understandable way and provides example code snippets for your reference.*
 

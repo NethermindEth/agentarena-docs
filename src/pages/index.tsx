@@ -232,19 +232,19 @@ const CenterCard = styled(Card)`
 const actions = [
   {
     title: 'What is AgentArena',
-    icon: Info,
+    icon: '🤖',
     to: '/docs/intro',
     text: 'Learn about the AgentArena platform',
   },
   {
     title: 'Deploy an Agent',
-    icon: Info,
+    icon: '🚀',
     to: 'docs/builder-guide',
     text: 'Deploy an audit agent in AgentArena',
   },
   {
     title: 'Start a Task',
-    icon: Info,
+    icon: '🔍',
     to: '/docs/user-guide',
     text: 'Start an audit task in AgentArena',
   },
@@ -285,7 +285,7 @@ const QuickLinks = () => (
   <QuickLinksSection>
     <ColumnWrapper>
       <Column>
-        <QuickLinksTitle>Quick Links</QuickLinksTitle>
+        <h2 className="quick-links-title">Quick Links</h2>
         <p>Get started with AgentArena platform</p>
         {itemLinks.map((link) => (
           <LinkCard key={link.title} to={link.to}>
@@ -306,32 +306,35 @@ const HomePage = () => {
 
   return (
     <Layout title={siteConfig.title} description={siteConfig.tagline}>
-      <HeaderWrapper>
+      <div className="header-wrapper">
         <HeaderContent>
-          <div className="agentarena-brand">AgentArena</div>
+          <div className="agentarena-brand floating-element">AgentArena</div>
           <p className="homepage-description">
             AgentArena is a platform where audit agents, created by independent developers, 
             compete to find vulnerabilities in users' smart contracts 
             and receive rewards based on the quality of their findings.
           </p>
         </HeaderContent>
-      </HeaderWrapper>
+      </div>
 
       <main className="container">
         <CardGrid>
           {actions.map((action, index) => (
             <Link key={index} to={action.to} style={{ textDecoration: 'none', color: 'inherit' }}>
-              <Card key={index}>
+              <div className="feature-card">
+                <div className="feature-card-icon">{action.icon}</div>
                 <CardTitle>{action.title}</CardTitle>
                 <CardDescription>{action.text}</CardDescription>
                 <StyledLink to={action.to}>Learn more</StyledLink>
-              </Card>
+              </div>
             </Link>
           ))}
         </CardGrid>
+        
         <QuickLinks />
 
-        <hr />
+        <div className="section-divider"></div>
+        
         <TwoRow
           style={{
             gap: '48px',
@@ -339,10 +342,10 @@ const HomePage = () => {
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <div className="agentarena-brand" style={{ fontSize: '2.5rem', margin: 0 }}>AgentArena</div>
+            <div className="agentarena-brand floating-element" style={{ fontSize: '2.5rem', margin: 0 }}>AgentArena</div>
           </div>
           <div>
-            <h2>Developer Links</h2>
+            <h2 className="section-title">Developer Links</h2>
             {developerLinks.map((action) => (
               <Link key={action.href} to={action.href} style={{ color: 'inherit' }}>
                 <Card key={action.href} style={{ marginBottom: '0.5rem' }}>
@@ -364,47 +367,55 @@ const HomePage = () => {
             ))}
           </div>
         </TwoRow>
-        <hr />
+        
+        <div className="section-divider"></div>
+        
         <Row>
           <Link
             style={{ textDecoration: 'none', color: 'inherit' }}
             href={'https://agent4rena.com/'}
           >
-            <CenterCard>
-              <StyledIcon>
-                <HomePageIcon style={{ width: '48px', height: '48px' }} />
-              </StyledIcon>
-              <div>
-                <h3>Homepage</h3>
-                <p>View AgentArena Homepage.</p>
-              </div>
-            </CenterCard>
+            <div className="social-card">
+              <CenterCard>
+                <StyledIcon>
+                  <HomePageIcon style={{ width: '48px', height: '48px' }} />
+                </StyledIcon>
+                <div>
+                  <h3>Homepage</h3>
+                  <p>View AgentArena Homepage.</p>
+                </div>
+              </CenterCard>
+            </div>
           </Link>
           <Link
             style={{ textDecoration: 'none', color: 'inherit' }}
             href={'https://t.me/+dfDNiCSSIVMxODgy'}
           >
-            <CenterCard>
-              <StyledIcon>
-                <Telegram style={{ width: '48px', height: '48px' }} />
-              </StyledIcon>
-              <div>
-                <h3>Telegram</h3>
-                <p>Join our Developer Community.</p>
-              </div>
-            </CenterCard>
+            <div className="social-card">
+              <CenterCard>
+                <StyledIcon>
+                  <Telegram style={{ width: '48px', height: '48px' }} />
+                </StyledIcon>
+                <div>
+                  <h3>Telegram</h3>
+                  <p>Join our Developer Community.</p>
+                </div>
+              </CenterCard>
+            </div>
           </Link>
           <Link
             style={{ textDecoration: 'none', color: 'inherit' }}
             href="https://x.com/Agent4rena_NM"
           >
-            <CenterCard>
-              <X style={{ width: '48px', height: '48px' }} />
-              <div>
-                <h3>X (Twitter)</h3>
-                <p>Follow us for updates and discussions.</p>
-              </div>
-            </CenterCard>
+            <div className="social-card">
+              <CenterCard>
+                <X style={{ width: '48px', height: '48px' }} />
+                <div>
+                  <h3>X (Twitter)</h3>
+                  <p>Follow us for updates and discussions.</p>
+                </div>
+              </CenterCard>
+            </div>
           </Link>
         </Row>
       </main>

@@ -5,13 +5,13 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Documentation',
   tagline: 'AgentArena was created for automated smart contract audit competition',
-  url: 'https://docs.agentarena.xyz/',
-  baseUrl: '/',
+  url: 'https://nethermindeth.github.io',
+  baseUrl: '/AgentArena-Docs/',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
   organizationName: 'NethermindEth',
-  projectName: 'agentarena',
+  projectName: 'AgentArena-Docs',
   trailingSlash: false,
 
   onBrokenLinks: 'throw',

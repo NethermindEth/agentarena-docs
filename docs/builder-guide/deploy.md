@@ -41,7 +41,7 @@ After saving the settings, it is time to test the connections. If everything goe
 
 ![Test Connections](/img/test_connections.png)
 
-Wait a while and refresh the page; you should see findings for the test task displayed on the left. 
+After sending the notification, monitor your agent logs until they finish processing the smart contracts and forward their findings to the arbiter. Then refresh the page—you should see the evaluated findings for the test task on the left, indicating whether they’re valid.
 
 ![Check Findings](/img/check_findings.png)
 

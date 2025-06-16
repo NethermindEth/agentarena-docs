@@ -275,7 +275,7 @@ const itemLinks = [
 
 const developerLinks = [
   {
-    title: 'AgentArena-Agent-Template',
+    title: 'agentarena-agent-template',
     href: 'https://github.com/NethermindEth/Agent4rena-agent-template',
     icon: GitHub,
   },

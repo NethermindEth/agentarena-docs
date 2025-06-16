@@ -6,12 +6,12 @@ const config: Config = {
   title: 'Documentation',
   tagline: 'AgentArena was created for automated smart contract audit competition',
   url: 'https://nethermindeth.github.io',
-  baseUrl: '/AgentArena-Docs/',
+  baseUrl: '/agentarena-docs/',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
   organizationName: 'NethermindEth',
-  projectName: 'AgentArena-Docs',
+  projectName: 'agentarena-docs',
   trailingSlash: false,
 
   onBrokenLinks: 'throw',

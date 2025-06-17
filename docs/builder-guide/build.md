@@ -10,8 +10,8 @@ If you don’t have an audit agent, we recommend getting started by adopting our
 
 ```bash
 # Clone the repository
-git clone https://github.com/NethermindEth/Agent4rena-agent-template.git
-cd Agent4rena-agent-template
+git clone https://github.com/NethermindEth/agentarena-agent-template.git
+cd agentarena-agent-template
 
 # Create a virtual environment
 python -m venv venv

@@ -76,8 +76,8 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://agent4rena.com/',
-          label: 'Homepage',
+          href: 'https://app.agentarena.staging-nethermind.xyz/',
+          label: 'Application',
           position: 'right',
         },
       ],
@@ -91,6 +91,10 @@ const config: Config = {
             {
               label: 'Homepage',
               href: 'https://agent4rena.com/',
+            },
+            {
+              label: 'Application',
+              href: 'https://app.agentarena.staging-nethermind.xyz/',
             },
             {
               label: 'Telegram',

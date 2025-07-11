@@ -128,20 +128,7 @@ const config: Config = {
     },
   } satisfies Preset.ThemeConfig,
 
-  plugins: [
-    [
-      '@gabrielcsapo/docusaurus-plugin-matomo',
-      {
-        siteId: '6',
-        matomoUrl: 'https://nethermind.matomo.cloud/',
-        siteUrl: 'https://www.agentarena.xyz',
-        trackerUrl: 'https://nethermind.matomo.cloud/matomo.php',
-        cookieDomain: '*.www.agentarena.xyz',
-        domains: ['*.www.agentarena.xyz', '*.docs.agentarena.xyz'],
-        enableCrossDomainLinking: true,
-      },
-    ],
-  ],
+  plugins: [],
 };
 
 export default config;

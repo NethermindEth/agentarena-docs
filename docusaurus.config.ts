@@ -76,7 +76,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://app.agentarena.staging-nethermind.xyz/',
+          href: 'https://agentarena.nethermind.io/',
           label: 'Application',
           position: 'right',
         },
@@ -94,7 +94,7 @@ const config: Config = {
             },
             {
               label: 'Application',
-              href: 'https://app.agentarena.staging-nethermind.xyz/',
+              href: 'https://agentarena.nethermind.io/',
             },
             {
               label: 'Telegram',
@@ -102,7 +102,7 @@ const config: Config = {
             },
             {
               label: 'X (Twitter)',
-              href: 'https://x.com/nethermindeth',
+              href: 'https://x.com/Agent4rena_NM',
             },
           ],
         },

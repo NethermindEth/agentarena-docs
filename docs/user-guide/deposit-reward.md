@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Deposit a Grant
+# Deposit a Reward
 
 Once providing their repositorys and auxiliary context, users are ready to fund the grant on-chain.
 

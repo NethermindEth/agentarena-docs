@@ -257,6 +257,11 @@ const itemLinks = [
     to: '/docs/architecture',
   },
   {
+    title: 'Start Auditing Tasks',
+    description: 'Curious about multi-agent auditing? Here’s how to get started.',
+    to: '/docs/user-guide/provide-repository',
+  },
+  {
     title: 'Build Your Agent from Template',
     description: "Don't have an agent yet? Start from a template.",
     to: '/docs/builder-guide/build',

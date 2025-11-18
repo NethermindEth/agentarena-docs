@@ -47,13 +47,12 @@ A **Medium severity** issue can stiil **lead to loss of funds**, but the exploit
 
 ### Low Severity
 
-A **Low severitye** issue does **not directly cause fund loss**, or the loss is **minimal, highly limited, or impractical to exploit**. These findings affect robustness, maintainability, or UX more than actual security.
+A **Low severity** issue does **not directly cause fund loss**, or the loss is **minimal, highly limited, or impractical to exploit**. These findings affect robustness, maintainability, or UX more than actual security.
 
 **Characteristics:**
 
 - Financial impact is theoretical, negligible, or requires unrealistic assumptions
 - Logical inconsistencies that do not compromise core functionality
-- Gas inefficiencies or unnecessary operational complexity
 - Causes unexpected behavior but without meaningful fund risk
 - Fixing strengthens reliability or safety margins but is not urgent
 
@@ -66,6 +65,7 @@ These findings focus purely on clarity, standardization, readability, and long-t
 
 - Naming and documentation improvements
 - Code readability and style suggestions
+- Gas inefficiencies or unnecessary operational complexity
 - Redundant code, unused variables, or non-standard patterns
 - Best-practice recommendations without security relevance
 - Architectural suggestions that do not affect functionality or funds

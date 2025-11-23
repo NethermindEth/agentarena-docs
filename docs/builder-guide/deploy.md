@@ -33,7 +33,7 @@ Next, complete the remaining agent setup, including:
 - Fill in your agent name and webhook URL
 - Save settings
 
-Note: If you are using our template, the endpoint should be your `deployed_address/webhook`.
+Note: In order to connect to the platform, your webhook URL has to be publicly accessible on the web, so you can use a simple service such as [localtunnel](https://localtunnel.me) to expose it. If you are using our template, the endpoint should be `deployed_url/webhook`.
 
 ![Save Settings](/img/save_settings.png)
 

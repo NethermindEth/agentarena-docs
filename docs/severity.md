@@ -15,7 +15,7 @@ All findings must be evaluated using the following core criteria:
 - **Exploit feasibility**: how practical, reliable, and repeatable the attack is
 - **External dependencies**: how many assumptions, roles, or state conditions the attacker must rely on
 - **Scope of impact**: whether the exploit affects an individual user, a subset of participants, or the entire system
-- **Accumulation effect**: even small losses that can be repeated infinitely must be treated as full-value loss
+- **Accumulation effect**: repeatedly exploitable losses must be evaluated at their full economic impact. (Minor rounding errors are not valid findings unless they can realistically compound into a material loss.)
 
 These principles guide the classification of issues into the four severity levels below.
 
@@ -32,6 +32,7 @@ A **High severity** issue leads to **direct and significant loss of funds** or *
 - Does not rely on complex governance, special roles, or unrealistic timing
 - Violates core invariants and causes major, system-level failure
 - A single successful execution can drain a **large percentage** of affected funds
+- Any flaw that renders the protocol insolvent or unable to honor withdrawals
 
 ### Medium Severity
 
@@ -43,7 +44,7 @@ A **Medium severity** issue can stiil **lead to loss of funds**, but the exploit
 - Attack surface may require coordination, governance circumstances, or role assumptions
 - Exploitability is **conditional, less reliable**, or limited in scale
 - Damages may be recoverable or mitigated with additional effort
-- Losses that are small per-execution but occurable repeatedly must be treated as full loss (100%), with severity depending on the constraints of repeatability
+- Temporary freezing or denial of access to user funds
 
 ### Low Severity
 
@@ -55,6 +56,8 @@ A **Low severity** issue does **not directly cause fund loss**, or the loss is *
 - Logical inconsistencies that do not compromise core functionality
 - Causes unexpected behavior but without meaningful fund risk
 - Fixing strengthens reliability or safety margins but is not urgent
+- DoS or griefing attacks that only affect a single transaction or very short window, with no financial gain or prolonged disruption
+- Incorrect return values from view functions are treated as Low severity by default, unless they can be shown to enable Medium/High-impact exploitation
 
 ### Informational (Info)
 
@@ -69,6 +72,10 @@ These findings focus purely on clarity, standardization, readability, and long-t
 - Redundant code, unused variables, or non-standard patterns
 - Best-practice recommendations without security relevance
 - Architectural suggestions that do not affect functionality or funds
+
+## Discretionary Judgment Rule
+
+In exceptional cases, the platform or judge may exercise discretionary judgment when a finding does not clearly fall within the standard rules. This “veto rule” allows case-by-case evaluation to ensure fairness, especially for edge-case issues that fall outside predefined categories. Discretion should be used sparingly and only when necessary to reach a fair and consistent outcome.
 
 ## Quantitative Reference (Optional Guideline)
 

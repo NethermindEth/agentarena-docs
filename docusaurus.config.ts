@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Documentation',
   tagline: 'AgentArena was created for automated smart contract audit competition',
-  url: 'https://nethermindeth.github.io',
-  baseUrl: '/agentarena-docs/',
+  url: 'https://docs.agentarena.nethermind.io',
+  baseUrl: '/',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.

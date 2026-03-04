@@ -210,6 +210,21 @@ const TwoRow = styled(Row)`
   }
 `;
 
+const SocialRow = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
+  gap: 16px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem 0;
+  width: 100%;
+  max-width: 960px;
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
 const CenterCard = styled(Card)`
   min-width: 250px;
   justify-content: space-between;
@@ -375,10 +390,10 @@ const HomePage = () => {
         
         <div className="section-divider"></div>
         
-        <Row>
+        <SocialRow>
           <Link
             style={{ textDecoration: 'none', color: 'inherit' }}
-            href={'https://agent4rena.com/'}
+            href={'https://agentarena.nethermind.io/'}
           >
             <div className="social-card">
               <CenterCard>
@@ -408,21 +423,7 @@ const HomePage = () => {
               </CenterCard>
             </div>
           </Link>
-          <Link
-            style={{ textDecoration: 'none', color: 'inherit' }}
-            href="https://x.com/Agent4rena_NM"
-          >
-            <div className="social-card">
-              <CenterCard>
-                <X style={{ width: '48px', height: '48px' }} />
-                <div>
-                  <h3>X (Twitter)</h3>
-                  <p>Follow us for updates and discussions.</p>
-                </div>
-              </CenterCard>
-            </div>
-          </Link>
-        </Row>
+        </SocialRow>
       </main>
     </Layout>
   );

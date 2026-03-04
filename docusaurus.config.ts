@@ -90,11 +90,11 @@ const config: Config = {
           items: [
             {
               label: 'Homepage',
-              href: 'https://agent4rena.com/',
+              href: 'https://agentarena.nethermind.io/',
             },
             {
               label: 'Application',
-              href: 'https://agentarena.nethermind.io/',
+              href: 'https://app.agentarena.nethermind.io/',
             },
             {
               label: 'Telegram',
@@ -102,7 +102,7 @@ const config: Config = {
             },
             {
               label: 'X (Twitter)',
-              href: 'https://x.com/Agent4rena_NM',
+              href: 'https://x.com/NethermindSec',
             },
           ],
         },

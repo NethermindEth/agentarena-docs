@@ -6,27 +6,27 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #d97706;
-  --ifm-color-primary-dark: #b45309;
-  --ifm-color-primary-darker: #92400e;
-  --ifm-color-primary-darkest: #78350f;
-  --ifm-color-primary-light: #f59e0b;
-  --ifm-color-primary-lighter: #fbbf24;
-  --ifm-color-primary-lightest: #fde68a;
+  --ifm-color-primary: #4eaeb6;
+  --ifm-color-primary-dark: #429ba2;
+  --ifm-color-primary-darker: #3a8c93;
+  --ifm-color-primary-darkest: #2d7379;
+  --ifm-color-primary-light: #65bcc3;
+  --ifm-color-primary-lighter: #7ec9cf;
+  --ifm-color-primary-lightest: #a8dde1;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(217, 119, 6, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(78, 174, 182, 0.14);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #fbbf24;
-  --ifm-color-primary-dark: #f59e0b;
-  --ifm-color-primary-darker: #d97706;
-  --ifm-color-primary-darkest: #b45309;
-  --ifm-color-primary-light: #fcd34d;
-  --ifm-color-primary-lighter: #fde68a;
-  --ifm-color-primary-lightest: #fef3c7;
-  --docusaurus-highlighted-code-line-bg: rgba(251, 191, 36, 0.15);
+  --ifm-color-primary: #7ec9cf;
+  --ifm-color-primary-dark: #65bcc3;
+  --ifm-color-primary-darker: #4eaeb6;
+  --ifm-color-primary-darkest: #429ba2;
+  --ifm-color-primary-light: #98d5da;
+  --ifm-color-primary-lighter: #b2e1e5;
+  --ifm-color-primary-lightest: #d0ecef;
+  --docusaurus-highlighted-code-line-bg: rgba(126, 201, 207, 0.16);
 }
 
 /* AgentArena brand text styling */
@@ -37,7 +37,7 @@
   background: linear-gradient(135deg, 
     var(--ifm-color-primary) 0%, 
     var(--ifm-color-primary-dark) 35%,
-    #e97517 65%,
+    #4cb1b8 65%,
     var(--ifm-color-primary-darker) 100%
   );
   -webkit-background-clip: text;
@@ -54,13 +54,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* Add subtle glow effect */
-  filter: drop-shadow(0 0 20px rgba(217, 119, 6, 0.15));
+  filter: drop-shadow(0 0 20px rgba(127, 213, 218, 0.15));
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .agentarena-brand:hover {
   transform: scale(1.02);
-  filter: drop-shadow(0 0 30px rgba(217, 119, 6, 0.25));
+  filter: drop-shadow(0 0 30px rgba(127, 213, 218, 0.25));
 }
 
 /* Fallback for browsers that don't support background-clip */
@@ -75,17 +75,17 @@
   background: linear-gradient(135deg, 
     var(--ifm-color-primary-light) 0%, 
     var(--ifm-color-primary) 35%,
-    #f59e0b 65%,
+    #7ec9cf 65%,
     var(--ifm-color-primary-lighter) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  filter: drop-shadow(0 0 25px rgba(251, 191, 36, 0.2));
+  filter: drop-shadow(0 0 25px rgba(162, 228, 231, 0.2));
 }
 
 [data-theme='dark'] .agentarena-brand:hover {
-  filter: drop-shadow(0 0 35px rgba(251, 191, 36, 0.3));
+  filter: drop-shadow(0 0 35px rgba(162, 228, 231, 0.3));
 }
 
 /* Navbar AgentArena title styling - clean and modern */
@@ -123,12 +123,12 @@
   background-clip: text !important;
   text-decoration: none !important;
   transition: all 0.3s ease !important;
-  filter: drop-shadow(0 0 8px rgba(217, 119, 6, 0.1)) !important;
+  filter: drop-shadow(0 0 8px rgba(127, 213, 218, 0.1)) !important;
 }
 
 .navbar__title a:hover {
   transform: scale(1.05) !important;
-  filter: drop-shadow(0 0 12px rgba(217, 119, 6, 0.2)) !important;
+  filter: drop-shadow(0 0 12px rgba(127, 213, 218, 0.2)) !important;
 }
 
 /* Fallback for browsers that don't support background-clip */
@@ -163,11 +163,11 @@
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
-  filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.15)) !important;
+  filter: drop-shadow(0 0 10px rgba(162, 228, 231, 0.15)) !important;
 }
 
 [data-theme='dark'] .navbar__title a:hover {
-  filter: drop-shadow(0 0 15px rgba(251, 191, 36, 0.25)) !important;
+  filter: drop-shadow(0 0 15px rgba(162, 228, 231, 0.25)) !important;
 }
 
 /* Alternative class name for navigation logo container */
@@ -293,7 +293,7 @@
 
 .feature-card:hover {
   border-color: var(--ifm-color-primary-light);
-  box-shadow: 0 6px 20px rgba(217, 119, 6, 0.1);
+  box-shadow: 0 6px 20px rgba(127, 213, 218, 0.1);
   transform: translateY(-4px);
 }
 
@@ -365,12 +365,12 @@
 
 .social-card:hover {
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 8px 20px rgba(217, 119, 6, 0.12);
+  box-shadow: 0 8px 20px rgba(127, 213, 218, 0.12);
 }
 
 /* Darker shadow for dark mode */
 [data-theme='dark'] .social-card:hover {
-  box-shadow: 0 12px 24px rgba(217, 119, 6, 0.2);
+  box-shadow: 0 12px 24px rgba(127, 213, 218, 0.2);
 }
 
 /* Animated background elements */
@@ -396,5 +396,5 @@
 
 /* Darker shadow for dark mode */
 [data-theme='dark'] .feature-card:hover {
-  box-shadow: 0 8px 25px rgba(217, 119, 6, 0.15);
+  box-shadow: 0 8px 25px rgba(127, 213, 218, 0.15);
 }

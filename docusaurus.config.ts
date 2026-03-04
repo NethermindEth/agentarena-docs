@@ -7,7 +7,7 @@ const config: Config = {
   tagline: 'AgentArena was created for automated smart contract audit competition',
   url: 'https://docs.agentarena.nethermind.io',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // GitHub pages deployment config.
   organizationName: 'NethermindEth',

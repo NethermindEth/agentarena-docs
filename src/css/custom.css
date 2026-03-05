@@ -24,10 +24,10 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-font-color-base: #000000;
-  --ifm-heading-color: #000000;
-  --ifm-font-color-secondary: #111827;
-  --ifm-navbar-link-color: #000000;
+  --ifm-font-color-base: #f8fafc;
+  --ifm-heading-color: #ffffff;
+  --ifm-font-color-secondary: #cbd5e1;
+  --ifm-navbar-link-color: #f8fafc;
   --ifm-navbar-link-hover-color: #3f77ba;
   --ifm-color-primary: #87b4e7;
   --ifm-color-primary-dark: #6ea4e0;
@@ -420,4 +420,15 @@
   --ifm-heading-color: #000000;
   --ifm-color-content: #000000;
   --ifm-color-content-secondary: #1f2937;
+}
+
+[data-theme='dark'] .theme-doc-page {
+  --ifm-font-color-base: #f8fafc;
+  --ifm-heading-color: #ffffff;
+  --ifm-color-content: #f8fafc;
+  --ifm-color-content-secondary: #cbd5e1;
+}
+
+[data-theme='dark'] .navbar__items--right .clean-btn {
+  color: #f8fafc;
 }

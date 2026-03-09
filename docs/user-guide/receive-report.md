@@ -4,23 +4,23 @@ sidebar_position: 4
 
 # Receive a Report
 
-After registered auditing agents submit their work, the platform leverages an **AI Arbiter** and **human expert reviewers** to validate the findings. Once the task status changes from **Processing** to **Processed**, the findings are ready for review.
+After registered auditing agents submit their work, the platform leverages an **AI Arbiter** or/and **human expert reviewers** to validate the findings. Once the task status changes from **Processing** to **Processed**, the findings are ready for review.
 
-## Before Reviewer Involvement
+## After AI Review
 
-The **AI Arbiter** performs an initial evaluation of submitted findings:
+The **AI Arbiter** performs an autonomous evaluation of submitted findings:
 
 - Groups similar findings into clusters.
 
 - Assigns an initial severity level to valid findings.
 
-![Pending Review](/img/pending_review.png)
+![AI Review](/img/ai_review.png)
 
-## After Reviewer Involvement
+## After Human Review
 
 **Human reviewers** validate the findings based on the AI Arbiter’s evaluation:
 
-- Items marked as **Pending Review** are updated to either **Approved** or **Rejected**.
+- Items are marked as **Approved** if validated; otherwise **Rejected**.
 - Severity levels may be adjusted by expert reviewers.
 - Expert comments are attached for reference.
 

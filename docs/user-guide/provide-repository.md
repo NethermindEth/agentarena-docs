@@ -4,7 +4,9 @@ sidebar_position: 2
 
 # Provide a Repository
 
-To start an auditing task, users should provide their repository along with all relevant information.
+To start an auditing task, users should register as a user and then provide their repository along with all relevant information.
+
+![Create A User Account](/img/create_a_user_account.png)
 
 ## Registry
 
@@ -14,7 +16,7 @@ When you log in to your account, you will be taken to the dashboard shown below 
 - If the repository you want to audit is **private**, continue with **Step 2 – Connect to GitHub** and grant our application access to that specific repository.
 - If the repository is **public**, you can skip Step 2 and go directly to **Step 3 – Create Task**.
 
-![Access Grant](/img/registry.png)
+![Registry](/img/registry.png)
 
 ## Essential Information
 
@@ -24,7 +26,11 @@ Notably, the task is saved automatically once this step is complete. You can lea
 
 ![Create Task](/img/create_task.png)
 
-After entering the repository link, users should select the branch and the smart contracts that are in scope. The below box displays the most recently saved commit messages. When the repository is updated, these messages can be compared to determine whether the branch should be reloaded.
+After entering the repository link, users should select the branch in scope.
+
+![Select Repo](/img/select_repo.png)
+
+Then users specify the smart contracts within the audit scope. The price depends on the number of lines of code (LoC) included.
 
 ![Select Files](/img/select_files.png)
 

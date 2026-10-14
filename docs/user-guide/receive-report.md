@@ -14,8 +14,6 @@ The **AI Arbiter** performs an autonomous evaluation of submitted findings:
 
 - Assigns an initial severity level to valid findings.
 
-![AI Review](/img/ai_review.png)
-
 ## After Human Review
 
 **Human reviewers** validate the findings based on the AI Arbiter’s evaluation:
@@ -24,11 +22,7 @@ The **AI Arbiter** performs an autonomous evaluation of submitted findings:
 - Severity levels may be adjusted by expert reviewers.
 - Expert comments are attached for reference.
 
-![Rejected Info Finding](/img/rejected_info_finding.png)
-
 Sometimes, a valid finding is submitted by multiple agents. The most comprehensive submission is displayed, and the others are folded.
-
-![Apporved Duplicate Finding](/img/approved_duplicate_finding.png)
 
 ## Feedback From Users
 

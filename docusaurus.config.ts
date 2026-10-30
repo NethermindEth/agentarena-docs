@@ -51,6 +51,8 @@ const config: Config = {
     [
       'classic',
       {
+        // The site has no blog; Docusaurus 3.10 otherwise publishes an empty /blog page.
+        blog: false,
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
           editUrl: 'https://github.com/NethermindEth/AgentArena-Docs/blob/main/',

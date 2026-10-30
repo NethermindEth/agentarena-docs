@@ -4,6 +4,8 @@ The website is built using [Docusaurus](https://docusaurus.io/), a modern static
 
 ### Installation
 
+Node 20.19 or newer (`engines` in `package.json`).
+
 ```
 $ npm install
 ```
